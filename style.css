@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6; /*межстрочный оступ*/
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  background-color: #e5e5e5;
+  height: 1px;
+  display: block;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #2f3e46;
+  text-align: center;
+}
+
+.img {
+  width: 200px;
+}
+
+.input {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  border: 1px solid #000;
+  border-radius: 20px;
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+  background: none;
+  outline: none;
+  padding: 10px;
+}
+
+.cards {
+  margin-top: 20px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: #f9dcc4;
+  padding: 15px;
+  font-size: 11px;
+}
+
+.question {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.q {
+  margin-right: 10px;
+  color: #ff595e;
+}
+
+.qu {
+  display: flex;
+  width: 90%;
+}
+
+.answer {
+  display: flex;
+}
+
+.a {
+  margin-right: 10px;
+  color: #76c893;
+}
+
+.copy-text {
+  overflow-wrap: anywhere;
+}
+
+.fa-copy {
+  font-size: 25px;
+  margin-right: 20px;
+  height: 30px;
+  color: #000;
+  transition: color 0.1s linear;
+}
+
+.fa-copy:hover {
+  cursor: pointer;
+  color: #e67a00;
+}
+
+.change {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #344e41;
+  width: 50px;
+}
+
+.all {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.allQ {
+  color: #fff;
+  background-color: #382c5c;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.active {
+  background-color: #3a0ca3;
+}
+
+.fa-eraser {
+  cursor: pointer;
+}
+
+.alert {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #888585;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: none;
+  opacity: 0;
+}
+
+.show {
+  animation: 1s linear 0s infinite alternate showAlert;
+  display: block;
+}
+
+@keyframes showAlert {
+  from {
+    /* pushes the sun down past the viewport */
+    opacity: 1;
+  }
+  to {
+    /* returns the sun to its default position */
+    opacity: 0;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #2f3e46;
+  color: #fff;
+  justify-content: center;
+  padding: 0px 0px 0px 25px;
+  flex-direction: column;
+}
+
+.lang {
+  display: flex;
+  flex-direction: column;
+}
+
+.type {
+  margin-bottom: 50px;
+}
